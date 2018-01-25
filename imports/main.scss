@@ -1,6 +1,6 @@
 /* CSS declarations go here */
 
-@import url("https://use.typekit.net/rxk7oiv.css");
+// @import url("https://use.typekit.net/rxk7oiv.css");
 $css--plex: true;
 $primary-color: #fff;
 $font-stack:'ibm-plex-mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier;
@@ -10,6 +10,7 @@ $font-stack:'ibm-plex-mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans M
 * {box-sizing: border-box;}
 
 body {
+  height: 100vh;
   font-family: $font-stack;
   color: $primary-color;
   // line-height: 1.25;
@@ -23,21 +24,21 @@ body {
 
 h1 {
   font-family: "gastromond",sans-serif;
-  font-size: 1.25rem;
+  // font-size: 1.25rem;
 }
 
 h2 {
   font-family: "gastromond",sans-serif;
-  font-size: 6rem;
+  // font-size: 6rem;
 }
 
 h3 {
   font-family: "gastromond",sans-serif;
-  font-size: 3rem;
+  // font-size: 3rem;
 }
 
 p {
-  font-size: 1.25rem;
+  // font-size: 1.25rem;
   line-height: 1.4;
   font-weight: light;
 }
@@ -51,12 +52,18 @@ a {
   color: $primary-color;
 }
 
+
 // IMAGE & CIRCLE //
 
 #circle {
   width: 40rem;
   height: 40rem;
-  background: red;
+  // background: red;
+  background-image:
+  linear-gradient(
+      #A58166,
+      #0B0907
+    );
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
@@ -67,16 +74,16 @@ a {
 
 .body__img {
   position: relative;
-  overflow-x: hidden;
-  overflow-y: -moz-hidden-unscrollable;
+  // overflow-x: hidden;
+  // overflow-y: -moz-hidden-unscrollable;
 }
 
 .body__img--marco {
   position: absolute;
   right: -325px;
-  bottom: -60px;
-  z-index: 150;
-  height: 210%;
+  bottom: 110px;
+  z-index: 100;
+  height: 90%;
   // transform: translate(240px, -520px);
 }
 
@@ -84,24 +91,19 @@ a {
 // PAGE CONTAINER //
 
 .container {
-  width: 1440px;
-  display: grid;
-  grid-template-rows: auto 1fr 1fr auto;
-  height: 100vh;
-  grid-template-areas: 
-  "header header" 
-  "title title" 
-  "content image" 
-  "footer footer"
-  //       "site-start c c c navigation"
-  //       "c c c c c "
-  //       "c c c c c "
-  //       "secondary-nav . . .  footer"
+  // width: 1440px;
+  // display: grid;
+  // grid-template-rows: auto 1fr 1fr auto;
+  // grid-template-areas: 
+  // "header header" 
+  // "title title" 
+  // "content image" 
+  // "footer footer"
 }
 
-.container > * {
-  border: 2px solid yellow;
-}
+// .container > * {
+//   border: 2px solid yellow;
+// }
 
 
 // NAVIGATION //
@@ -110,13 +112,13 @@ header {
   padding-top: 32px;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-area: header;
+  // display: grid;
+  // grid-template-columns: repeat(2, 1fr);
+  // grid-area: header;
 }
 
 header nav {
-  justify-self: end;
+  // justify-self: end;
 }
 
 nav a {
@@ -126,7 +128,7 @@ nav a {
 // CONTENT //
 
 .body__content {
-  grid-area: content;
+  // grid-area: content;
 }
 
 .body__content p {
@@ -137,9 +139,9 @@ nav a {
 .body__header--title {
   position: relative;
   padding-top: 48px;
-  display: grid;
-  grid-area: title;
-  grid-template-columns: 1fr 1fr;
+  // display: grid;
+  // grid-area: title;
+  // grid-template-columns: 1fr 1fr;
   // grid-gap: 15px;
   // grid-template-areas: "Title . . Name";
   // margin-top: 64px;
@@ -169,8 +171,8 @@ nav a {
 }
 
 .body__img {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  // display: grid;
+  // grid-template-columns: 1fr auto;
 }
 
 .body__img--marco {
@@ -181,9 +183,9 @@ nav a {
 // FOOTER //
 
 footer {
-  display: grid;
-  grid-template-columns: 1fr fit-content(200px);
-  grid-area: footer;
+  // display: grid;
+  // grid-template-columns: 1fr fit-content(200px);
+  // grid-area: footer;
 }
 
 .nav__secondary {
