@@ -8,9 +8,9 @@ $font-stack:'ibm-plex-mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans M
 // BASIC STYLES //
 
 * {box-sizing: border-box;}
-* {
-  outline: 1px solid red;
-}
+// * {
+//   outline: 1px solid red;
+// }
 
 body {
   height: 100vh;
@@ -185,6 +185,7 @@ nav a {
   // display: grid;
   // grid-template-columns: 1fr auto;
   min-height: 44%;
+  margin-top: -87px;
 }
 
 .body__img--marco {
@@ -209,6 +210,10 @@ footer {
 
 footer .social {
   z-index: 101;
+}
+
+footer > a {
+  padding-left: 2.5rem;
 }
 
 // .wrapper {
