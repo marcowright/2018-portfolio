@@ -43,7 +43,6 @@ h3 {
 p {
   // font-size: 1.25rem;
   line-height: 1.4;
-  font-weight: light;
 }
 
 // h1, h3, p {
@@ -55,9 +54,6 @@ a {
   color: $primary-color;
 }
 
-.social img {
-  width: 50px;
-}
 // IMAGE & CIRCLE //
 
 
@@ -69,8 +65,8 @@ a {
 
 #circle {
   position: absolute;
-  top: 25px;
-  left: 798px;
+  top: 65px;
+  left: 841px;
   width: 40rem;
   height: 40rem;
   background-image:
@@ -87,8 +83,8 @@ a {
 
 .body__img img {
   position: absolute;
-  left: 640px;
-  top: -53px;
+  left: 641px;
+  // top: -53px;
   z-index: 100;
   // height: 80vh;
   // transform: translate(240px, -520px);
@@ -145,6 +141,7 @@ nav a {
   padding-left: 5rem;
   // width: 50%;
   z-index: 102;
+  font-weight: lighter;
 }
 
 .body__header--title {
@@ -196,10 +193,14 @@ nav a {
 // FOOTER //
 
 footer {
-  display: flex;
+  // display: flex;
   // grid-template-columns: 1fr fit-content(200px);
   // grid-area: footer;
-  width: 100%
+  // width: 100%;
+  position: absolute;
+  bottom: 0px;
+  min-height: calc(17vh - 140px);
+  padding-left: 2.5rem;
 }
 
 .nav__secondary {
@@ -212,9 +213,13 @@ footer .social {
   z-index: 101;
 }
 
-footer > a {
-  padding-left: 2.5rem;
+.social img {
+  width: 2.25rem;
 }
+
+// footer > a:first-child {
+//   padding-left: 2.5rem;
+// }
 
 // .wrapper {
 //   display: grid;
