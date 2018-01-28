@@ -65,10 +65,10 @@ a {
 
 #circle {
   position: absolute;
-  top: 65px;
-  left: 841px;
-  width: 40rem;
-  height: 40rem;
+  top: -16px;
+  left: 777px;
+  width: 46rem;
+  height: 46rem;
   background-image:
   linear-gradient(
       #A58166,
@@ -84,6 +84,7 @@ a {
 .body__img img {
   position: absolute;
   left: 641px;
+  top: -61px;
   // top: -53px;
   z-index: 100;
   // height: 80vh;
@@ -201,6 +202,7 @@ footer {
   bottom: 0px;
   min-height: calc(17vh - 140px);
   padding-left: 2.5rem;
+  justify-content: space-evenly;
 }
 
 .nav__secondary {
