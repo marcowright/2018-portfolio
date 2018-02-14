@@ -135,6 +135,20 @@ nav a {
   margin-left: 2.5rem;
 }
 
+header nav a {
+  margin-left: 1em;
+  transition: border 0.3s ease-in;
+  border-bottom: solid 3px rgba(47,47,47,1.00);
+  padding-bottom: 3px;
+}
+
+header nav a:hover {
+  border-color: rgba(64,199,224,1.00);
+}
+
+header nav a.selected {
+  border-color: rgba(245,201,161,1.00);
+}
 
 // CONTENT //
 
@@ -379,5 +393,29 @@ footer .social {
   .body__img > img {
     
   }
+
+}
+
+
+@media (max-width:320px) {
+
+  div.container header {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0;
+  }
+
+  .body__header--title {
+    padding-top: 2rem;
+  }
+
+  .body__header--title h2 {
+    letter-spacing: 0;
+  }
+
+  .body__header--title h3 span:last-child {
+    padding-left: 3rem;
+  }
+
 
 }
