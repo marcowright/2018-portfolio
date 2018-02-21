@@ -2,7 +2,8 @@
   "name": "newwwyear",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "meteor run",
+    "build": "./.bin/build"
   },
   "dependencies": {
     "@ibm/type": "^0.5.3",
@@ -12,7 +13,8 @@
   "devDependencies": {
     "autoprefixer": "^7.2.5",
     "postcss-easy-import": "^3.0.0",
-    "tachyons": "^4.9.1"
+    "tachyons": "^4.9.1",
+    "meteor-build-client": "^0.4.1"
   },
   "postcss": {
     "plugins": {
